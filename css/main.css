@@ -1,0 +1,1273 @@
+body {
+	background-color: #F5F5F5;
+}
+
+.header{
+	width: 100%;
+}
+
+.topbar{
+	background-color: #157ad4;
+	border-bottom: 1px solid #156dcf;
+}
+
+.topbarCon{
+	height: 26px;
+}
+
+.leftCon{
+	float: left;
+}
+
+#mark{    /*怎样简便的实现图片和文字一起水平居中*/
+	vertical-align: middle;
+	margin: 0 3px 3px 0;
+}
+
+.rightCon{
+	float: right;
+}
+
+.rightCon li{
+	float: left;
+	margin: 0 5px;
+}
+
+.topbarCon a{
+	font: 12px/26px '宋体';
+	color:#c2d9f8;
+}
+
+.topbarCon a:hover{
+	text-decoration: underline;
+}
+
+.headerInf{
+	background-color: #1d7ad9;
+}
+
+.headerInfCon{
+	height: 103px;
+}
+
+.centerCon{
+	width: 1191px;
+	margin: 0 auto;
+}
+
+
+#logo{                       /*？如何设置图片水平居中*/
+	margin: 31px 0;
+	padding-right: 10px;
+	border-right: 1px solid #0d67b3;
+}
+
+.mod_city{
+	padding-left: 10px;
+	margin-top: 31px;
+	font: 12px/20px '宋体';
+	color: white;
+}
+
+.hlwords a{
+	font: bold 12px/20px '宋体';
+	color: #fee602;
+}
+
+.hlwords a:hover{
+	text-decoration: underline;
+}
+
+.searchbar{
+	height: 19px;
+	width: 340px;
+	padding: 8px 10px;
+	margin: 31px 0  31px 215px;
+	border: none;
+}
+
+.searchsub{
+	height: 35px;   /*为何这里的height、width要设置为包括padding的值？*/
+	width: 70px;
+	padding: 8px 10px;
+	border: none;
+	background-color: #ff8c00;
+	font: bold 14px '微软雅黑';
+	margin:31px 0;
+	color: white;
+}
+
+.shopcar{
+	width: 145px;
+	height: 35px;
+	margin: 31px 0;
+	background-color: #ff8c00;
+}
+
+.shoppic{
+	width: 87px;
+	height: 35px;  /*为何这里不继承父级高度？*/
+	border-right: 1px solid #e27a00;
+	cursor: pointer;
+}
+
+.shopico{
+	width: 23px;   /*由于父级元素有float，该元素必须设置float，否则width，height设置无效，why？*/
+	height: 20px;
+	margin: 7px 0 0 10px;
+	background: url(../img/icon/icons.png) no-repeat -60px -240px;
+}
+
+.shoppic span{
+	margin: 7px 5px;
+}
+
+.yahei1{
+	font: 14px '微软雅黑';   /*同样需要设置float属性*/
+	color: white;
+}
+.shopcut span{
+	margin: 7px 17px;
+}
+
+.shopcut{
+	width: 56px;
+	background: url(../img/icon/sj.jpg) no-repeat 35px 11px;
+}
+
+.navbar{
+	height: 39px;
+	border-top: 1px solid #135dbc;
+	background-color: #1369c0;
+}
+
+.navCon a{
+	padding: 0 25px;
+	font: 14px/39px '微软雅黑';
+	color: white;
+	cursor: auto;
+	display: block;
+}
+
+.navCon a:hover{
+	background-color: #135dbc;
+}
+
+.navCon .allitems a{
+	width: 190px;
+	border-bottom: 1px solid #3484ef;
+	font: 16px/38px '微软雅黑'; 
+	background-color: #4593fd;
+	padding: 0;
+	text-indent: 10px;
+}
+
+.navCon .allitems a:hover{
+	text-decoration: underline;
+}
+
+.bigClass{
+	width: 170px;
+	height: 42px;
+	background-color: #4593fd;
+	padding: 9px 10px 10px 10px;
+	border-bottom: 1px solid #3484ef;
+	border-top: 1px solid #3484ef;
+
+}
+
+.bigClass_on{
+	padding: 7px 9px 8px;
+	background-color: white;
+	border-top:2px solid #4594fd;
+	border-bottom: 2px solid #4594fd; 
+	border-left: 2px solid #4593fd;
+}
+
+.className{
+	height: 25px;
+}
+
+.listArrow{
+	float: right;
+	width: 0;  /*可选*/
+	height: 0; /*可选*/
+	margin-top: 8px;
+	display: inline-block; /*可选*/
+	overflow: hidden; /*可选*/
+	border-color: transparent transparent transparent #d5e8ff;
+	border-width: 4px;
+	border-style: dashed dashed dashed solid;
+}
+
+.className h3{
+	float: left;
+}
+
+.className a{
+	font: 14px '微软雅黑';
+	color: white;
+}
+
+.classItems a{
+	font: 12px '宋体';
+	color: #c2d9f8;
+}
+
+.bigClass_on h3 a{
+	color: #333;
+}
+
+.bigClass_on .classItems a{
+	color: #666;
+}
+
+.className .sClass{
+	float: left;
+	height: 18px;   /*为何这里设置height无效？,又是浮动，兄弟元素浮动导致！*/
+	/*width: 36px;*/
+	padding: 0 5px;
+	margin: 3px 0 0 8px;
+	background-color: #106AC0;
+	border-radius: 9px;
+	overflow: hidden;
+	font: 12px/18px '宋体';
+}
+
+.bigClass a:hover{
+	text-decoration: underline;
+}
+
+.lastClass{
+	height: 45px;
+}
+
+.mainnav{
+	position: relative;
+}
+
+.submenu{
+	display: none;
+	position: absolute;
+	width: 801px;
+	/*height: 626px;*/
+	left: 190px;
+	box-shadow: 5px 5px 10px rgba(55,55,55,0.4);
+	background-color: white;
+	border: 2px solid #4594fd;
+	border-left-width: 0;
+	z-index: 4;
+}
+
+.leftsubm{
+	width: 530px;
+	/*height: 626px;  */
+	/*子元素浮动，父元素不浮动时，子元素无法继承父元素的height？必须单独设置自己的height才能撑开该元素？*/
+	padding: 0 20px;
+	border-right: 1px solid #ddd;
+}
+
+.leftsubm dl{
+	padding: 10px 0 10px 65px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.leftsubm dt{
+	width: 65px;
+	margin-left: -65px;
+	font: 700 12px/22px tahoma;
+	color: #1d7ad9;
+}
+
+.leftsubm dd a{
+	font: 12px/22px 宋体;
+	color: #666;
+	margin: 0 3px;
+}
+
+.leftsubm dd a:hover{
+	color: #333;
+}
+
+.leftsubm s{
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px dotted #dadada;
+	margin: 5px 0;
+	display: block;
+}
+
+.leftsubm a.hlitems{
+	color: #ff7300;
+}
+
+.leftsubm a.hlitems:hover{
+	color: #ff7300;
+}
+
+#submenu1,#submenu2,#submenu3,#submenu4,#submenu5,#submenu6{
+	top: 0px;
+}
+
+#submenu7,#submenu8{
+	top: 233px;
+}
+
+#submenu9{
+	top: 192px;
+}
+
+.butcol{
+	margin:15px 0 20px 0;
+}
+
+.butcol b{
+	font-weight: normal;/*不应使用b标签,建议使用span标签*/
+}
+
+.butcol a{
+	font: 12px/26px '宋体';
+	color: white;
+	height: 26px;
+	display: inline-block;
+	padding: 0 10px;
+	margin-right: 5px;
+	background-color: #2785E6;
+}
+
+.butcol a:hover{
+	text-decoration: none;
+}
+
+.butcol i{
+	float: right;  /*必须！没有float其显示结果会很奇怪！why！*/
+	border-color: transparent transparent transparent #d5e8ff;
+	border-width: 4px;
+	border-style: dashed dashed dashed solid;
+	margin: 9px 0 9px 5px;
+}
+
+.rightsubm p{
+	margin:6px 0 0 15px;
+	color: #333;
+	font: 14px/30px '微软雅黑';
+	height: 30px;
+}
+
+.logoBox{
+	width: 202px;
+	/*height: 164px;*/
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	margin-left: 15px;
+}
+
+.brandlogo{
+	float: left;
+	width: 100px;
+	height: 40px;
+	border-top: 1px solid #eee;
+	border-left: 1px solid #eee;
+} 
+
+.brandonsale{
+	margin:0 0 0 15px;
+}
+
+.brandonsale a{
+	font: 12px/20px '宋体';
+	color: #666;
+	display: block;
+}
+
+.brandonsale a:hover{
+	color: #333;
+}
+
+.onsaleimg{
+	margin-top: 30px;
+}
+
+.banner{
+	position: relative;
+}
+
+.pic img{
+	width: 801px;
+}
+
+.adPage{
+	position: absolute;
+	left: 10px;
+	bottom: 15px;
+}
+
+.adPage a{
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-color:#444;
+	color: white;
+	float: left;
+	margin-right: 10px;
+	text-align: center;
+	font: 13px/20px '微软雅黑';
+}
+
+.adPage a:hover{
+	background-color: orange;
+}
+
+.adPage .on{    /*必须这样选择该选择器定义的css样式才会生效，仅仅是用.on选择不行*/
+	background-color: orange;
+}
+
+.limitTime{
+	width: 800px;
+	height: 50px;
+	background-color: #f8f8f8;
+	border-right: 1px solid #D3D3D3;
+	background: url(../img/icon/clock.png) no-repeat 10px center;
+}
+
+.limitTime .head{
+	font: 700 16px/50px '微软雅黑';
+	color: #29333F;
+	margin-left: 35px;
+}
+
+.clock{
+	margin-left: 20px;
+	font: 700 14px/50px '微软雅黑';
+	color: #666666;
+}
+
+.clock .showNumber{
+	width: 34px;
+	height: 32px;
+	border-radius: 3px;
+	background-color: #2a333d;
+	color: white;
+	font: 700 18px/32px '微软雅黑';
+	padding: 3px 5px;
+}
+
+.orangePad{
+	width: 800px;
+	height: 3px;
+	background-color: #ff7700;
+}
+
+.predict{
+	width: 65px;
+	height: 35px;
+	padding: 0 10px;
+	background: url(../img/icon/rightarrow.png) no-repeat 70px 14px;  /*必须先定义bg-img再定义bg-color才能到达预期效果*/
+	background-color: #ff7700;
+	font: 14px/35px '微软雅黑';  /*如何用纯css制作箭头*/
+	color: white;
+}
+
+.onsale{   /*务必注意子元素float后父元素的height会变为0*/
+	width: 800px;
+	height: 249px;
+	border-bottom: 1px solid #D3D3D3;
+	border-right: 1px solid #D3D3D3;
+	float: left;
+}
+
+.onsale li{
+	width: 245px;
+	height: 112px;
+	padding: 12px 10px 0 10px;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #eee; 
+	position: relative;
+}
+
+.highlight{
+	position: absolute;
+	top: 3px;
+	left: 2px;
+	width: 50px;
+	height: 38px;
+	background: url("../img/icon/goods_mark_1.png") no-repeat;
+	text-align: center;
+	font: 400 12px/14px arial;
+	vertical-align: center;
+	padding-top: 12px;
+	color: white;
+}
+
+.saleitemPic{
+	width: 100px;
+	height: 104px;
+	margin-right: 9px;
+}
+
+.saleitemPic img{   /*必须有这一布的设置才能使图片的大小按照我们希望的大小呈现*/
+	width: 100px;
+	height: 100px;
+}
+
+.saleitemInf{
+	width: 136px;
+}
+
+.onsale .description{
+	width: 100%;
+	display: block;
+	color: #333;
+	font: 12px/1.5 'Lucida Grande';
+}
+
+.description:hover{
+	text-decoration: underline;
+}
+
+.price i {
+	font: bold 12px/18px 'arial';
+	color: #D70000;
+}
+
+.price span{
+	font: bold 12px/18px 'Lucida Grande', 'tahoma', 'arial', '宋体';
+	color: #D70000;
+}
+
+.price:hover{
+	border-bottom: 1px solid #D70000;
+}
+
+.remain{
+	width: 100%;
+}
+.remain h5{
+	color: #666;
+	font: 12px/18px '宋体';
+	display: inline-block;
+	float: left;
+}
+
+.total{
+	width: 82px;
+	height: 6px;
+	background-color: #e4e4e4;
+	float: left;
+	margin: 8px 0 0 5px;
+}
+
+.buyButton{
+	width: 36px;
+	height: 23px;
+	padding: 0 10px;
+	background-color: #DC3535;
+	color: white;
+	font: 12px/23px '宋体';
+	display: block;
+	margin-top: 5px;
+}
+
+.clear{
+	clear: both;
+}
+
+.total .sold{
+	width: 40%;
+	height: 6px;
+	background-color: #66BF41;
+	float: left;
+}
+
+.itemTitle{
+	width: 1190px;
+	height: 30px;
+	background-color: gray;
+	margin-top: 5px;
+}
+
+.otherInf{
+	width: 200px;
+}
+
+.notice{
+	width: 184px;
+	height: 121px;
+	padding-left: 15px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.notice p{
+	display: inline-block;
+}
+
+.narrow{
+	margin: 15px 15px 0 0;
+}
+
+.narrow i{
+	width: 12px;
+	height: 13px;border: 1px solid #ccc;
+	margin-right: 3px;
+}
+
+.narrow_left{
+	background: url(../img/icon/index.png) no-repeat -120px -120px;
+}
+
+.narrow_right{
+	background: url(../img/icon/index.png) no-repeat -160px -120px;
+}
+
+.head1{
+	color: #333;
+	font: 400 16px/35px '微软雅黑';
+	margin-top: 3px;
+}
+
+.notice a{
+	font: 12px/22px '宋体';
+	color: #666;
+}
+
+.notice a:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.mobileyx{
+	height: 114px;
+	padding-left: 15px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.mcontent{
+	margin-left: 10px;
+}
+
+.mcontent a{
+	font: 12px/16px '宋体';
+	color: #666;
+}
+
+.dlButton{
+	width: 60px;
+	height: 22px;
+	padding: 0 8px;
+	margin-top: 5px;
+	background-color: #4273C5
+}
+
+.dlButton a{
+	font: 12px/22px '宋体';
+	color: white;
+}
+
+.mobilefee{
+	height: 201px;
+	padding-left: 15px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.lineGroup{
+	margin-bottom: 7px;
+}
+
+.mobilefee input{
+	width: 118px;
+	height: 24px;
+	font: 12px/24px arial;
+	color: #999;
+	text-indent: 5px;
+	box-shadow: inset 0 1px 2px #d9d9d9;
+	border: 1px solid #bfbfbf;
+}
+
+.ipbtn{
+	background: url(../img/icon/col.png) no-repeat -17px 0;
+	margin-left: -15px;
+	padding: 11px 4px 10px;
+	width: 7px;
+	height: 5px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.ipbtn i{
+	background: url(../img/icon/col.png) no-repeat -25px -28px;
+	width: 7px;
+	height: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.mobilefee #faceValue{
+	color: black;
+	font: 700 12px/24px '宋体'; 
+}
+
+.mobilefee label,.mobilefee p{
+	font: 12px/26px '微软雅黑';
+	margin-right: 3px;
+}
+
+.mobilefee .submit{
+	display: block;
+	text-align: center;
+	width: 82px;
+	height: 24px;
+	background-color: #e50008;
+	color: white;
+	font: 13px/26px '微软雅黑';
+	margin: 1px 50px;
+	border-style: none;
+}
+
+.mobilefee .submit:hover{
+	background-color: #BC0005;
+}
+
+.local,.phonePrice{
+	color: #f00000;
+	font: 14px/26px '微软雅黑';
+}
+
+.company{
+	height: 42px;
+	text-indent: 85px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	color: #666;
+	font: bold 12px/34px '宋体';
+	background: url(../img/icon/company.png) no-repeat 56px center;
+}
+
+.bbTitle{
+	height: 35px;
+	margin-top: 10px;
+}
+
+.bbtitleName{
+	display: inline-block;
+	color: #666;
+	font: 20px/35px '微软雅黑';
+	margin-right: 10px;
+}
+
+.turnWrap{
+	margin-top: 8px;
+}
+
+.turnWrap img{
+	margin-right: 3px;
+}
+
+.turnWrap b{
+	color: #333;
+	font: 12px/1.5 '宋体';
+	cursor: pointer;
+}
+
+.readMore a{
+	color: #333;
+	font: 12px/35px '宋体';
+	cursor: pointer;
+}
+
+.readMore a:hover{
+	text-decoration: underline;
+}
+
+.bbContent{     
+	overflow: hidden;
+	position: relative;
+}
+
+.bbContent li{          /**为什么子元素无法撑开li元素的高度，也无法使li设置的高度生效？*/
+	display: inline;
+}
+
+.yxnewItem{   /*通过设置margin负值结合overflow的hidden设置可以解决图片大小与布局不协调的问题*/
+	margin-left: -5px;
+}
+
+.xiaoYi{
+	margin-left: -4px;
+}
+
+.pdTitle{
+	position: absolute;
+	top: 6px;
+	font: 14px/30px '微软雅黑';
+	color: #333;
+	cursor: pointer;
+}
+
+.xpTitle {
+	left: 325px;
+}
+
+.xyss {
+	left: 724px;
+}
+
+.yxfx {
+	left: 1123px;
+}
+
+.xpTitle:hover,.xyss:hover,.yxfx:hover{
+	text-decoration: underline;
+}
+
+.into{
+	width: 85px;
+	height: 25px;
+	padding: 0 8px;
+	position: absolute;
+	bottom: 0px;
+	background-color: #555;
+	opacity: .7;
+	color: white;
+	font: 12px/25px '宋体';
+	text-align: center;
+	cursor: pointer;
+}
+
+.intoxp{
+	left: 290px;
+}
+
+.intoxy{
+	left: 690px;
+}
+
+.intofx{
+	right: 0px;
+}
+
+#intoxppd,#intoxyss,#intoyxfx{
+	display: none;
+}
+.mallTitle{
+	margin-top: 10px;
+}
+
+.mallTitle span,.mallTitle a{
+	color: #666;
+	font: 20px/35px '微软雅黑';
+}
+
+.mallTitle span{
+	margin-right: 10px;
+}
+
+.mallTitle a:hover{
+	color: #3479F0;
+}
+
+.mallContent{
+	height: 570px;
+	overflow: hidden;
+}
+
+.boxCon{
+	width: 800px;
+	height: 398px;
+	border:1px solid #ccc;
+	border-left: 0;
+	overflow: hidden;
+	background-color: white;
+
+}
+
+.itemHigh{
+	width: 199px;
+	height: 279px;
+	border-right: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+	overflow: hidden;/*这里必须加上overf才能使图片多余部分隐藏，对图片设置overflow无效*/
+}
+
+.itemLow{
+	width: 179px;
+	height: 119px;
+	padding: 0 10px;
+	border-right: 1px solid #E5E5E5;
+}
+
+.itemLow img{
+	margin: 25px 10px 0 10px;
+}
+
+.itemlowInf{
+	padding-top: 35px;
+}
+
+.itemlowInf a{
+	font: 12px/1.5 '宋体';
+	color: #333;
+}
+
+.itemlowInf a:hover{
+	text-decoration: underline;
+}
+
+.price1 i {
+	font: 12px/18px 'arial';
+}
+
+.price1 {
+	font: 16px/24px 'Lucida Grande', 'tahoma', 'arial', '宋体';
+	color: #666;
+}
+
+.fixCon{
+	width: 199px;
+	height: 398px;
+	border:1px solid #ccc;
+	border-left: 0;
+}
+
+.fixCon img{
+	margin-left: -1px;
+}
+
+.btimg{
+	margin-top: 20px;
+}
+
+.smallClass{
+	background-color: #F4F5F1;   /*为何该颜色生效了但视觉上却不明显，易迅是如何实现的？*/
+	width: 168px;
+	height: 149px;
+	padding: 10px;
+	border:1px solid #ccc;
+	border-top:none;
+}
+
+.smallClass dl{
+	padding-bottom: 15px;
+}
+
+.smallClass dt{
+	display: inline;
+}
+
+.smallClass dt a{
+	color: #333;
+	font: bold 12px/1.5 '宋体';
+}
+
+.smallClass dd{
+	display: inline;
+	padding-left: 8px;
+}
+
+.smallClass dd a{
+	color: #999;
+	font: 12px/1.5 '宋体';
+}
+
+.smallClass a:hover{
+	text-decoration: underline;
+}
+
+.smallClass dd a:hover{
+	color: #333;
+}
+
+.tabSale{
+	width: 1001px;
+	background-color: white;
+}
+
+.rankOrange{
+	background-color: #FF7201;
+	height: 3px;
+	margin-top: -3px;
+	position: relative;
+	display: block;  /*i标签为行内元素，须设置display属性才能设置宽高*/
+}
+
+.tagNav{
+	height: 35px;
+}
+
+.tagNav li{
+	float: left;
+}
+
+.tagNav li a:hover,.tagNav .selectTag{
+	position: relative;  /*加上这一句就可以使右移过来的竖线消失，神奇！是因为脱离文档流？*/
+	color: white;
+	margin: 0 -1px;
+	padding: 0 16px;
+	background-color: #FF7201;
+}
+.tagNav a{
+	height: 32px;
+	padding:0 15px;
+	display: inline-block;
+	color: #333;
+	font: 14px/32px '微软雅黑';
+}
+
+.tagTit{
+	color: #333;
+	font: 400 16px/33px '微软雅黑';
+	padding:0 5px 0 15px;
+}
+
+li.rankGap{
+	width: 1px;
+	height: 14px;
+	padding: 0;
+	margin-top: 11px;
+	background-color: #B6B6B6;
+}
+
+.tabCon{
+	width: 1000px;
+	height: 169px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	overflow: hidden;
+}
+
+.tagCon li{
+	width: 200px;
+	float: left;
+	margin-top: 20px;
+}
+
+.saleRank{
+	width: 20px;
+	height: 90px;
+	float: left;
+	margin-right: 10px;
+	background: url(../img/icon/index.png) no-repeat;
+}
+
+.rank1{
+	background-position: 0 -160px;
+}
+
+.rank2{
+	background-position: -40px -160px;
+}
+
+.rank3{
+	background-position: -80px -160px;
+}
+
+.rank4{
+	background-position: -120px -160px;
+}
+
+.rank5{
+	background-position: -160px -160px;
+}
+
+.topItem{
+	margin-top: 5px;
+	width: 170px;
+	float: left;
+}
+
+.tiImg{
+	margin-right: 10px;
+	width: 80px;
+	height: 84px;
+	float: left;
+}
+
+.tiInf{
+	width: 80px;
+	float: left;   /*为什么这里设置两个div浮动可以并排布局，设置display为inline-block不行*/
+	overflow: hidden;
+}
+
+.tiinfTit{
+	height: 36px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+
+.tiinfTit a{
+	font: 12px/1.5 '宋体';
+	color: #333;
+}
+
+.tiinfTit a:hover{
+	text-decoration: underline;
+}
+
+.showtiPrice i{
+	color: #666;
+	font: 12px/1.5 arial;
+}
+
+.showtiPrice span{
+	color: #666;
+	font: 16px/1.5 tahoma;
+}
+
+.service{
+	width: 990px;
+	height: 81px;
+	margin: 30px auto;
+}
+
+.serv{
+	border-right: 1px dotted #CCCCCC;
+	width: 164px;
+	text-align: center;
+}
+
+.serv i{
+	margin: auto;
+	width: 35px;
+	height: 35px;
+	display: block;
+	background: url(../img/icon/icons.png) no-repeat;
+	margin-bottom: 10px;
+}
+
+.serv1 i{
+	background-position: 0 -60px;
+}
+
+.serv2 i{
+	background-position: -50px -60px;
+}
+
+.serv3 i{
+	background-position: -100px -60px;
+}
+
+.serv4 i{
+	background-position: -150px -60px;
+}
+
+.serv5 i{
+	background-position: -250px -60px;
+}
+
+.serv6 i{
+	background-position: -200px -60px;
+}
+
+.serv a span{
+	color: #666;
+	font: bold 12px/1.5 '宋体';
+	margin-bottom: 5px;
+}
+
+.serv a{
+	color: #999;
+	font: 12px/1.5 '宋体';
+}
+
+.servInf{
+	width: 990px;
+	height: 141px;
+	margin: 0 auto;
+}
+
+.servAction{
+	width: 108px;
+	padding-left: 56px;
+}
+
+.servAction p{
+	color: #666;
+	font: bold 14px/1.5 '宋体';
+}
+
+.servAction a{
+	color: #666;
+	font: 12px/24px '宋体';
+}
+
+.servAction a:hover{
+	text-decoration: underline;
+}
+
+.banquan1{
+	margin: 14px auto 14px auto;
+	text-align: center;
+}
+
+.bq1{
+	padding: 0 10px;
+	display: inline-block;
+	border-right: 1px solid #333;
+}
+
+
+.bq1 a{
+	font: 12px '宋体';
+	color: #333;
+}
+
+.bq1 a:hover{
+	text-decoration: underline;
+}
+
+.banquan1 span{
+	color: #666;
+	font: 12px '宋体';
+	padding-left: 10px;
+}
+
+.banquan2{
+	margin: 14px auto 14px auto;
+	text-align: center;
+}
+
+.banquan2 span{
+	font-family: 'arial';
+	color: #666;
+	padding: 0 10px;
+}
+
+.banquan2 a{
+	color: #333;
+}
+
+.banquan2 a:hover{
+	text-decoration: underline;
+}
+
+.banquan3{
+	text-align: center;
+}
+
+.bq3img1{
+	width: 128px;
+	height: 46px;
+	margin: 0 5px;
+	display: inline-block;  /*必须设置a的display为inline-block才能为其设置背景图片且居中，
+							设置block能实现背景图片，但不能实现用text-align设置图片居中*/
+	background: url(../img/icon/icons.png) no-repeat -130px 0;
+}
+
+.bq3img2{
+	width: 128px;
+	height: 46px;
+	margin: 0 5px;
+	display: inline-block; 
+	background: url(../img/icon/icons.png) no-repeat 0 0;
+}
+
+/*.paddingBox{
+	width: 100%;
+	height: 3px;
+	background-color: orange;
+}*/
+
+
+
